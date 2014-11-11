@@ -39,5 +39,5 @@ nopってディレクトリできてる
     git commit
     git status
 5.remote
- git push origin master
+`git push origin master`
 
