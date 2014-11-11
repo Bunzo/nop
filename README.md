@@ -36,7 +36,7 @@ nopってディレクトリできてる
 `git remote add origin https://github.com/Bunzo/nop`
 3.編集
 4.local
-    git commit
+    git commit [file]
     git status
 5.remote
 `git push origin master`
