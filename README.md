@@ -14,25 +14,30 @@ hello, world.
 
 # 参加しよう
 ## 下準備
-コマンド打てる環境をととのえる
-apt-get gitとか
-githubのアカとる
-Bunzoさんに言う
+1.コマンド打てる環境をととのえる
+2.apt-get gitとか
+3.githubのアカとる
+4.Bunzoさんに言う
 ## ssh 公開鍵の設定
- ssh-keygen -t rsa -C "your_email@example.com"
+1.ssh-keyつくる
+`ssh-keygen -t rsa -C "your_email@example.com"`
 ひたすらエンた
-~/.ssh/id_rsa.pubコピる
-web経由アカウントセッティングからkey登録する
- ssh -T git@github.com
+2.~/.ssh/id_rsa.pubコピる
+3.web経由アカウントセッティングからkey登録する
+4.確認
+`ssh -T git@github.com`
 ## checkoutみたいな
- git clone https://github.com/Bunzo/nop
+`git clone https://github.com/Bunzo/nop`
 nopってディレクトリできてる
-git statusとか打つ
+2.git statusとか打つ
 ## remote repoの設定
-git remote -vとか打つ
- git remote add origin https://github.com/Bunzo/nop
-編集
- git commit
- git status
+1.git remote -vとか打つ
+2.追加
+`git remote add origin https://github.com/Bunzo/nop`
+3.編集
+4.local
+    git commit
+    git status
+5.remote
  git push origin master
 
