@@ -15,11 +15,14 @@ compiler
 verilog model of the processor
 
 # 参加しよう
+
 ## 下準備
 1. コマンド打てる環境をととのえる
 2. apt-get gitとか
 3. githubのアカとる
 4. Bunzoさんに言う
+
+
 ## ssh 公開鍵の設定
 1. ssh-keyつくる
 `ssh-keygen -t rsa -C "your_email@example.com"`
@@ -28,10 +31,14 @@ verilog model of the processor
 3. web経由アカウントセッティングからkey登録する
 4. 確認
 `ssh -T git@github.com`
+
+
 ## checkoutみたいな
 `git clone https://github.com/Bunzo/nop`
 nopってディレクトリできてる
 2. git statusとか打つ
+
+
 ## remote repoの設定
 1. git remote -vとか打つ
 2. 追加
