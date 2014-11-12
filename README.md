@@ -6,12 +6,12 @@ bar
 # hoge
 hello, world.
 
-## Directory
-# simulatr
+# Directory
+## simulatr
 c simulator
-# compiler
+## compiler
 compiler
-# vlgmodel
+## vlgmodel
 verilog model of the processor
 
 # 参加しよう
@@ -34,7 +34,7 @@ verilog model of the processor
 
 
 ## checkoutみたいな
-`git clone https://github.com/Bunzo/nop`
+1. `git clone https://github.com/Bunzo/nop`
 nopってディレクトリできてる
 2. git statusとか打つ
 
