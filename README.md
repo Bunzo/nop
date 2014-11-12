@@ -14,6 +14,8 @@ compiler
 ## vlgmodel
 verilog model of the processor
 
+
+***
 # 参加しよう
 
 ## 下準備
@@ -22,31 +24,33 @@ verilog model of the processor
 3. githubのアカとる
 4. Bunzoさんに言う
 
-
 ## ssh 公開鍵の設定
 1. ssh-keyつくる
-`ssh-keygen -t rsa -C "your_email@example.com"`
+        ssh-keygen -t rsa -C "your_email@example.com"
     ひたすらエンた
 2. ~/.ssh/id_rsa.pubコピる
 3. web経由アカウントセッティングからkey登録する
 4. 確認
-`ssh -T git@github.com`
-
+        ssh -T git@github.com
 
 ## checkoutみたいな
+<<<<<<< HEAD
 1. `git clone https://github.com/Bunzo/nop`
+=======
+1. cloneしてくる
+        git clone https://github.com/Bunzo/nop
+>>>>>>> mod intro
 nopってディレクトリできてる
 2. git statusとか打つ
-
 
 ## remote repoの設定
 1. git remote -vとか打つ
 2. 追加
-`git remote add origin https://github.com/Bunzo/nop`
+        git remote add origin https://github.com/Bunzo/nop
 3. 編集
 4. local
-    git commit [file]
-    git status
+        git commit [file]
+        git status
 5. remote
-`git push origin master`
+        git push origin master
 
