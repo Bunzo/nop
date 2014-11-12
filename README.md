@@ -34,12 +34,8 @@ verilog model of the processor
         ssh -T git@github.com
 
 ## checkoutみたいな
-<<<<<<< HEAD
-1. `git clone https://github.com/Bunzo/nop`
-=======
 1. cloneしてくる
         git clone https://github.com/Bunzo/nop
->>>>>>> mod intro
 nopってディレクトリできてる
 2. git statusとか打つ
 
