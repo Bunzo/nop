@@ -1,24 +1,37 @@
 #ifndef _PROCESSOR_H_
 #define _PROCESSOR_H_
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 #define Uint unsigned int
 #define Uchar unsigned char
 
 #define PENUM 1
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <strings.h>
+#define GRNUM  8
 
 #include "clk.h"
 #include "ia.h"
+#include "if.h"
+#include "mmem.h"
 
 typedef struct {
-} proc_p;
+  Uint reg;
+} reg_s;
+
+typedef struct {
+  ia_s plia;
+  if_s plif;
+  
+  reg_s gpr[GRNUM];
+} proc_s;
 
 struct {
 	clk_s clk;
-	proc_p p[PENUM];
+	proc_s p[PENUM];
+  mmem_s imem;
+  mmem_s dmem;
 } chip;
 
 
