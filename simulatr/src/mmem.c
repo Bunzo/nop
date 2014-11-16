@@ -1,8 +1,8 @@
 #include "processor.h"
 
-void mmem_alloc(Uint pid, size_t s)
+void mmem_alloc(mmem_s* m, size_t s)
 {
-	if ( ! (PE(pid).imem.mem = (Uint *)malloc(s))) {
+	if ( ! (m->mem = (Uint *)malloc(s))) {
 		perror(__FUNCTION__);
 		onintr();
 	}
