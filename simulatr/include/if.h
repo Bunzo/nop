@@ -4,11 +4,11 @@
 #define IFQSIZE 4
 
 typedef struct {
-  Uint ins[IFQSIZE];
-  Uint full: 1;
-  Uint empty: 1;
-  Uint top: 2;                  /* log(IFQSIZE) */
-  Uint bot: 2;                  /* log(IFQSIZE) */
+	Uint ins[IFQSIZE];
+	Uint full: 1;
+	Uint empty: 1;
+	Uint top: 2;                  /* log(IFQSIZE) */
+	Uint bot: 2;                  /* log(IFQSIZE) */
 } if_s;
 
 Uint if_ins(Uint);

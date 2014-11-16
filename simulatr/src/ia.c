@@ -2,10 +2,17 @@
 
 void pc_inc(Uint pid)
 {
-  chip.p[pid].plia.pc += 0x4;
+	PE(pid).plia.pc += 0x4;
+#ifdef DEBUG
+	fprintf(stdout, "pid: %d pc: %d \n", pid, PE(pid).plia.pc);
+#endif
+
 }
 
 Uint pc_pc(Uint pid)
 {
-  return chip.p[pid].plia.base + chip.p[pid].plia.pc;
+#ifdef DEBUG
+	fprintf(stdout, "pid: %d pc: %d \n", pid, PE(pid).plia.pc);
+#endif
+	return PE(pid).plia.base + PE(pid).plia.pc;
 }
