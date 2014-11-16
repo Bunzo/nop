@@ -5,7 +5,7 @@ typedef struct {
   Uint *mem;
 } mmem_s;
 
-void mmem_alloc(Uint, size_t);
+void mmem_alloc(mmem_s*, size_t);
 Uint* mmem_base(mmem_s*);
 Uint mmem_read(mmem_s*, Uint);
 void mmem_write(mmem_s*, Uint, Uint);

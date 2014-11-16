@@ -2,7 +2,7 @@
 
 void pc_inc(Uint pid)
 {
-	PE(pid).plia.pc += 0x4;
+	PE(pid).plia.pc += 0x1;
 #ifdef DEBUG
 	fprintf(stdout, "pid: %d pc: %d \n", pid, PE(pid).plia.pc);
 #endif
