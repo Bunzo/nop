@@ -2,11 +2,12 @@
 #define _MMEM_H_
 
 typedef struct {
-  Uchar *p;
+  Uint *mem;
 } mmem_s;
 
-Uchar* mmem_alloc(size_t s);
-Uchar* mmem_read(Uint addr);
-Uchar* mmem_write(Uint addr);
+void mmem_alloc(Uint, size_t);
+Uint* mmem_base(mmem_s*);
+Uint mmem_read(mmem_s*, Uint);
+void mmem_write(mmem_s*, Uint, Uint);
 
 #endif
