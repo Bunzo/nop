@@ -1,10 +1,10 @@
 #ifndef _CLK_H_
 #define _CLK_H_
 
-#define POSEDGE_CLK 0
-#define NEGEDGE_CLK 1
-#define CLKSTOP_POS 2
-#define CLKSTOP_NEG 3
+#define POSEDGE_CLK 0x0
+#define NEGEDGE_CLK 0x1
+#define CLKSTOP_POS 0x2
+#define CLKSTOP_NEG 0x3
 
 typedef struct {
 	Uint clk: 1;
@@ -15,5 +15,7 @@ typedef struct {
 void clk_clk ();
 void clk_rst ();
 void clk_showattr();
+void clk_counter();
+Uint clk_stat();
 
 #endif
