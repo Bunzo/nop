@@ -17,8 +17,6 @@ void clk_showattr()
 
 void clk_rst(void)
 {
-	printf("clk_rst\n");
-	clk_showattr();
 	chip.clk.clk = 0;
 	chip.clk.prev_clk = 1;
 	chip.clk.counter = 0;
