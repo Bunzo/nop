@@ -1,3 +1,5 @@
+# ref:	http://gmaj7sus4.hatenablog.com/entry/2013/12/18/165224
+
 TARGET		=	asim
 INCLUDES	=	-I./include
 LDFLAGS		=	
@@ -7,8 +9,7 @@ OBJDIR		=	./obj
 CC			=	gcc48
 CFLAGS		=	-O2 -Wall -DDEBUG -MMD -MP
 
-ALLC		=	$(shell find . -name *.c)
-ALLINC		=	$(subst processor.h, , $(shell find . -name *.h))
+ALLC		=	$(shell find . -name '*.c')
 SRCS		=	$(filter-out $(NOMAKEDIR), $(ALLC))
 DIRS		=	$(dir $(SRCS))
 BINDIRS		=	$(addprefix $(OBJDIR)/, $(DIRS))
@@ -31,7 +32,7 @@ default:
 	@[ -d  $(OBJDIR)   ] || mkdir -p $(OBJDIR)
 	@[ -d "$(BINDIRS)" ] || mkdir -p $(BINDIRS)
 	@$(MAKE) all
-	./$(TARGET)
+	@./$(TARGET)
 
 all : $(OBJS) $(TARGET)
 

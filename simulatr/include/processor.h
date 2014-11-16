@@ -10,8 +10,10 @@
 #define Uchar unsigned char
 
 #define PENUM 1
-#define GRNUM  8
+#define GRNUM 8
 #define PE(x) chip.p[x]
+#define ICACHESIZE 1<<10
+#define DCACHESIZE 1<<10
 
 #include "clk.h"
 #include "ia.h"
@@ -19,7 +21,7 @@
 #include "mmem.h"
 
 typedef struct {
-	Uint reg;
+	Uint reg: 32;
 } reg_s;
 
 typedef struct {
@@ -38,4 +40,6 @@ struct {
 } chip;
 
 void onintr();
+void pe_construction();
+void pe_destruction();
 #endif
