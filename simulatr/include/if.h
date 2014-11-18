@@ -11,6 +11,7 @@ typedef struct {
 	Uint bot: 2;                  /* log(IFQSIZE) */
 } if_s;
 
+void if_init();
 Uint if_ins(Uint);
 Uint if_full(Uint);
 Uint if_empty(Uint);

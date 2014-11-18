@@ -2,7 +2,7 @@
 #define _IA_H_
 
 typedef struct {
-	Uint pc;
+	Uint pc:32;
 	Uint base;
 } ia_s;
 
