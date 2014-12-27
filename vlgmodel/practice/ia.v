@@ -15,7 +15,7 @@ module ia (/*AUTOARG*/
       // Initialize pc[aw-1:0]
     end else begin
       // 
-      // pc ++
+      // pc += 4
     end
   end
 
