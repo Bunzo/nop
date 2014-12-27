@@ -27,10 +27,18 @@ typedef struct {
 } gr_s;
 
 typedef struct {
+	Uint zero: 1;
+	Uint negative: 1;
+	Uint overflow: 1;
+	Uint underflow: 1;
+} cr_s;
+
+typedef struct {
 	ia_s plia;
 	if_s plif;
 
 	gr_s gpr[GRNUM];
+	cr_s cr;
 	mmem_s imem;
 	mmem_s dmem;
 
